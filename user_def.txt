@@ -1,0 +1,45 @@
+# Number of continuous variables in the optimization problem.
+n_cont=1
+
+# Number of discrete variables in the optimization problem.
+n_disc=1
+
+# Population size for the genetic algorithm.
+pop_size=100
+
+# Number of Elite preservations you want to make
+n_elite = 5
+
+# Maximum number of generations for the genetic algorithm.
+n_gen=100
+
+# Number of decimal places to round results to.
+round_decimals=4
+
+# Number of times to run the optimization algorithm.
+n_runs=2
+
+
+# Lower bounds for continuous variables (x1 to x10).
+xl_cont1=-5
+
+# Upper bounds for continuous variables (x1 to x10).
+xu_cont1=5
+
+# Discrete variable configuration (for x11, since n_disc=1).
+disc_type1=lc
+lb1=0
+ub1=12
+lc1=2
+
+# Problem type: Specifies whether to use a standard or user-defined problem.
+# - 'S': Standard problems (e.g., 'g1'), with predefined objective functions and constraints.
+# - 'U': User-defined problem, with objective function in obj_func_file.
+# - Current setting: 'U', using obj_func.py.
+problem_type=U
+
+# Path to the user-defined objective function file (used when problem_type=U).
+obj_func_file=C:\Users\dell\Desktop\IITG intenship projects\RGA\obj_func.py
+
+# Constraints for the optimization problem.
+constraints=x[0] > 0; OF > 10
